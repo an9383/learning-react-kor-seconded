@@ -113,7 +113,7 @@
     store.dispatch(addColor("토마토", "#990000"))
     store.dispatch(addColor("큰 파랑", "#0000FF"))
 
-    document.write(store.getState().colors.map(c=>c.title).join(", "))
+    console.log(store.getState().colors.map(c=>c.title).join(", "))
 
 
   </script>

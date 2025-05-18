@@ -8,7 +8,7 @@ function logClockTime() {
 
     // 콘솔을 지우고 시간을 로그에 남긴다.
     console.clear();
-    document.write(time);
+    console.log(time);
 }
 
 function getClockTime() {

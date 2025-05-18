@@ -20,7 +20,7 @@ serverStore.subscribe(() =>
     fs.writeFile(
         path.join(__dirname, '../../data/initialState.json'),
         JSON.stringify(serverStore.getState()),
-        error => (error) ? document.write("상태 저장 오류!", error) : null
+        error => (error) ? console.log("상태 저장 오류!", error) : null
     )
 )
 
@@ -73,7 +73,7 @@ const respond = ({url}, res) =>
     )
 
 const logger = (req, res, next) => {
-    document.write(`'${req.url}'에 대한 ${req.method} 요청`)
+    console.log(`'${req.url}'에 대한 ${req.method} 요청`)
     next()
 }
 

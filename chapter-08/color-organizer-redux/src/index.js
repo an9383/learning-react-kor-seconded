@@ -8,8 +8,8 @@ const store = storeFactory()
 //store.dispatch(sortColors("title"))
 //store.dispatch(removeColor("a5685c39-6bdc-4727-9188-6c9a00bf7f95"))
 
-document.write('현재 상태', store.getState())
-document.write('계속 진행. 액션 디스패치...')
+console.log('현재 상태', store.getState())
+console.log('계속 진행. 액션 디스패치...')
 
 console.clear()
 store.dispatch(removeColor("a5685c39-6bdc-4727-9188-6c9a00bf7f95"))

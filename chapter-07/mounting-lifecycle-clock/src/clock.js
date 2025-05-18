@@ -9,7 +9,7 @@ export default class Clock extends Component {
     }
 
     componentDidMount() {
-        document.write("시계 시작중")
+        console.log("시계 시작중")
         this.ticking = setInterval(() =>
                 this.setState(getClockTime())
             , 1000)
@@ -17,7 +17,7 @@ export default class Clock extends Component {
 
     componentWillUnmount() {
         clearInterval(this.ticking)
-        document.write("시계 중단중")
+        console.log("시계 중단중")
     }
 
     render() {

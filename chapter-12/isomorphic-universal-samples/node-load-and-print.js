@@ -1,7 +1,7 @@
 var printNames = response => {
     var people = JSON.parse(response).results,
         names = people.map(({name}) => `${name.last}, ${name.first}`)
-    document.write(names.join('\n'))
+    console.log(names.join('\n'))
 }
 
 const https = require('https')

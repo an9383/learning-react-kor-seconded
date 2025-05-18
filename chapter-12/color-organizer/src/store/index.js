@@ -6,10 +6,10 @@ const clientLogger = store => next => action => {
     if (action.type) {
         let result
         console.groupCollapsed('디스패칭', action.type)
-        document.write('이전 상태', store.getState())
-        document.write('액션', action)
+        console.log('이전 상태', store.getState())
+        console.log('액션', action)
         result = next(action)
-        document.write('다음상태', store.getState())
+        console.log('다음상태', store.getState())
         console.groupEnd()
         return result
     } else {
@@ -18,9 +18,9 @@ const clientLogger = store => next => action => {
 }
 
 const serverLogger = store => next => action => {
-    document.write('\n  서버 액션 디스패칭\n')
-    document.write(action)
-    document.write('\n')
+    console.log('\n  서버 액션 디스패칭\n')
+    console.log(action)
+    console.log('\n')
     return next(action)
 }
 

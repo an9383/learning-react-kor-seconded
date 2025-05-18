@@ -44,7 +44,7 @@
     }
 
     const logColor = (title, color) =>
-        document.write(`New Color: ${title} | ${color}`)
+        console.log(`New Color: ${title} | ${color}`)
 
     render(
       <AddColorForm onNewColor={logColor} />,

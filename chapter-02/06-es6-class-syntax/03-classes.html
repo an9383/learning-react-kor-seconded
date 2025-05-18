@@ -20,7 +20,7 @@
       }
 
       print() {
-        document.write(this.destination + "은(는) " + this.length + "일 걸립니다.")
+        console.log(this.destination + "은(는) " + this.length + "일 걸립니다.")
       }
 
     }
@@ -33,7 +33,7 @@
 
       print() {
         super.print()
-        document.write(`당신의 ${this.gear.join("와(과) 당신의 ")}를(을) 가져오십시오.`)
+        console.log(`당신의 ${this.gear.join("와(과) 당신의 ")}를(을) 가져오십시오.`)
       }
     }
 

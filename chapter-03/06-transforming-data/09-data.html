@@ -14,7 +14,7 @@
     const ages = [21,18,42,40,64,63,34]
 
     const maxAge = ages.reduce((max, age) => {
-      document.write(`${age} > ${max} = ${age > max}`)
+      console.log(`${age} > ${max} = ${age > max}`)
       if (age > max) {
           return age
       } else {
@@ -22,7 +22,7 @@
       }
     }, 0)
 
-    document.write('maxAge', maxAge)
+    console.log('maxAge', maxAge)
 
 </script>
 </body>

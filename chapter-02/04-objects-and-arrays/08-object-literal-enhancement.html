@@ -21,17 +21,17 @@
       sound: sound,
       powderYell: function() {
       var yell = this.sound.toUpperCase()
-      document.write(`${yell} ${yell} ${yell}!!!`)
+      console.log(`${yell} ${yell} ${yell}!!!`)
     },
       speed: function(mph) {
         this.speed = mph
-        document.write('속력(mph):', mph)
+        console.log('속력(mph):', mph)
       }
     }
 
     skier.powderYell()
     skier.speed("엉덩이에 불날 것 같은")
-    document.write(JSON.stringify(skier))
+    console.log(JSON.stringify(skier))
 
 </script>
 </body>
