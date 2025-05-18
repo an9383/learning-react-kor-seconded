@@ -27,7 +27,7 @@ some updating lifecycle methods.
         componentDidUpdate(prevProps) {
             const { title, rating } = this.props
             const status = (rating > prevProps.rating) ? 'better' : 'worse'
-            console.log(`${title} is getting ${status}`)
+            document.write(`${title} is getting ${status}`)
             this.refs.title.style.backgroundColor = ""
             this.refs.title.style.color = "black"
         }

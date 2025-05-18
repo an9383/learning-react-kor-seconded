@@ -71,7 +71,7 @@
 
 
       const unsubscribeLogger = store.subscribe(() =>
-          console.log('다음 상태', store.getState())
+          document.write('다음 상태', store.getState())
       )
 
       store.dispatch({

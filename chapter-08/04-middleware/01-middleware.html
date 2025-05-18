@@ -110,10 +110,10 @@
       const logger = store => next => action => {
           let result
           console.groupCollapsed('디스패칭', action.type)
-          console.log('이전 상태', store.getState())
-          console.log('액션', action)
+          document.write('이전 상태', store.getState())
+          document.write('액션', action)
           result = next(action)
-          console.log('다음 상태', store.getState())
+          document.write('다음 상태', store.getState())
           console.groupEnd()
           return result
       }
@@ -125,7 +125,7 @@
 
 
       const populate = compose(
-        () => console.log('색 개수', store.getState().colors.length),
+        () => document.write('색 개수', store.getState().colors.length),
         () => store.dispatch(addColor("큰 파랑", "#0000FF")),
         () => store.dispatch(addColor("토마토", "#990000")),
         () => store.dispatch(addColor("잔디", "#009900")),

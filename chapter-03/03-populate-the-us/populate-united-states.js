@@ -63,7 +63,7 @@ const countMembersBy = countBy => members => {
 
 /* Console Helpers
  **********************************************************************/
-const log = message => console.log(message)
+const log = message => document.write(message)
 const reset = () => sessionStorage.clear()
 const logMembersToConsole = (members=[]) => {
     console.groupCollapsed(`${members.length} members`);

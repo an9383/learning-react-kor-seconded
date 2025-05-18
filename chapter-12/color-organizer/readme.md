@@ -50,7 +50,7 @@ of the `render function`.
 
     ...
 
-    console.log('rendered from here...')
+    document.write('rendered from here...')
 
     render(
         <Provider store={store}>
@@ -71,7 +71,7 @@ of the `render function`.
 
     ...
 
-    console.log('rendered from here...')
+    document.write('rendered from here...')
 
     hydrate(
         <Provider store={store}>

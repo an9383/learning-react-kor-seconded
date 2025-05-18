@@ -116,7 +116,7 @@
       )
 
       const print = compose(
-        list => console.log(list),
+        list => document.write(list),
         titles => titles.join(", "),
         map => map(c=>c.title),
         colors => colors.map.bind(colors),

@@ -21,17 +21,17 @@
       sound,
       powderYell() {
         let yell = this.sound.toUpperCase()
-        console.log(`${yell} ${yell} ${yell}!!!`)
+        document.write(`${yell} ${yell} ${yell}!!!`)
       },
       speed(mph) {
         this.speed = mph
-        console.log('속력(mph):', mph)
+        document.write('속력(mph):', mph)
       }
     }
 
     skier.powderYell()
     skier.speed(350)
-    console.log(JSON.stringify(skier))
+    document.write(JSON.stringify(skier))
 
 </script>
 </body>

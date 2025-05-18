@@ -21218,7 +21218,7 @@ var Clock = function (_Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            console.log("시계 시작중");
+            document.write("시계 시작중");
             this.ticking = setInterval(function () {
                 return _this2.setState((0, _lib.getClockTime)());
             }, 1000);
@@ -21227,7 +21227,7 @@ var Clock = function (_Component) {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
             clearInterval(this.ticking);
-            console.log("시계 중단중");
+            document.write("시계 중단중");
         }
     }, {
         key: 'render',

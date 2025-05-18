@@ -6,7 +6,7 @@ describe("Store Factory", () => {
     beforeAll(() => {
         window.localStorage = {}
         console.groupCollapsed = jest.fn()
-        console.log = jest.fn()
+        document.write = jest.fn()
         console.groupEnd = jest.fn()
     })
 
@@ -31,7 +31,7 @@ describe("Store Factory", () => {
         )
 
         it("logs state before action and state after", () =>
-            expect(console.log.mock.calls.map(args=>args[0]))
+            expect(document.write.mock.calls.map(args=>args[0]))
                 .toEqual([
                     "이전 상태",
                     "액션",

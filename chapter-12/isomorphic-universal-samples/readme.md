@@ -10,7 +10,7 @@ This code works in browser and in with node js
     var printNames = response => {
         var people = JSON.parse(response).results,
             names = people.map(({name}) => `${name.last}, ${name.first}`)
-        console.log(names.join('\n'))
+        document.write(names.join('\n'))
     }
 ```
 

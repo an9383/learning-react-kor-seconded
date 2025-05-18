@@ -10,7 +10,7 @@ global.Enzyme = Enzyme
 
 window.localStorage = {}
 console.groupCollapsed = jest.fn()
-console.log = jest.fn()
+document.write = jest.fn()
 console.groupEnd = jest.fn()
 
 global._testColors = deepFreeze([

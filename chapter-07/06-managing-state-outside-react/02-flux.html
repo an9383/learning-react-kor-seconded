@@ -83,7 +83,7 @@
     ************************************************************/
     class CountdownDispatcher extends Dispatcher {
     handleAction(action) {
-      console.log('dispatching action:', action)
+      document.write('dispatching action:', action)
       this.dispatch({
         source: 'VIEW_ACTION',
         action

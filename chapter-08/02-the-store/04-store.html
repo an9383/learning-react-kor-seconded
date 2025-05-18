@@ -97,7 +97,7 @@
 
 
 
-    console.log(
+    document.write(
       "ADD_COLOR 전 colors 배열 길이 ",
       store.getState().colors.length
     )
@@ -108,14 +108,14 @@
       color: "#F142FF",
       timestamp: "Thu Mar 10 2016 01:11:12 GMT-0800 (PST)"
     })
-    console.log(
+    document.write(
       "ADD_COLOR 이후 colors 배열 길이",
       store.getState().colors.length
     )
 
 
 
-    console.log(
+    document.write(
       "RATE_COLOR 전 색 평점",
       store.getState().colors[0].rating
     )
@@ -124,14 +124,14 @@
       id: 0,
       rating: 5
     })
-    console.log(
+    document.write(
       "RATE_COLOR 후 색 평점",
       store.getState().colors[0].rating
     )
 
 
 
-    console.log(
+    document.write(
       "두 액션 실행 이후 애플리케이션 상태",
       store.getState()
     )

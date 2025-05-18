@@ -25,7 +25,7 @@ class Color extends Component {
         const { title, rating } = this.props
         alert(`${title}: 평점 ${prevProps.rating} -> ${rating}`)
         const status = (rating > prevProps.rating) ? '좋아짐' : '나빠짐'
-        console.log(`${title} 평점이 ${status}`)
+        document.write(`${title} 평점이 ${status}`)
         this._title.style.backgroundColor = ""
         this._title.style.color = "black"
     }

@@ -24,7 +24,7 @@
     })
 
     getFakeMembers(5).then(
-      members => console.log(members),
+      members => document.write(members),
       err => console.error(
           new Error("randomuser.me에서 멤버를 가져올 수 없습니다."))
     )

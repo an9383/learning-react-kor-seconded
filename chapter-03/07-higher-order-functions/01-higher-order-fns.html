@@ -15,10 +15,10 @@
         (condition) ? fnTrue() : fnFalse()
 
     const showWelcome = () =>
-        console.log("Welcome!!!")
+        document.write("Welcome!!!")
 
     const showUnauthorized = () =>
-        console.log("Unauthorized!!!")
+        document.write("Unauthorized!!!")
 
     invokeIf(true, showWelcome, showUnauthorized)
     invokeIf(false, showWelcome, showUnauthorized)
