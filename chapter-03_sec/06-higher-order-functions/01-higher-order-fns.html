@@ -11,7 +11,7 @@
   <p>Open the Console</p>
 <script type="text/babel">
 
-    const invokeIf = (condition, fnTrue, fnFalse) => 
+    const invokeIf = (condition, fnTrue, fnFalse) =>
         (condition) ? fnTrue() : fnFalse()
 
     const showWelcome = () =>
@@ -22,6 +22,8 @@
 
     invokeIf(true, showWelcome, showUnauthorized)
     invokeIf(false, showWelcome, showUnauthorized)
+
+    ////Welcome!!! Unauthorized!!!
 
 </script>
 </body>
