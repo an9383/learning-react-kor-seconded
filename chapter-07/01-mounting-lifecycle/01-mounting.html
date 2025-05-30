@@ -11,7 +11,7 @@
 <body>
 <div id="react-container"></div>
   <script type="text/babel">
-  
+
     const getFakeMembers = count => new Promise((resolves, rejects) => {
       const api = `https://api.randomuser.me/?nat=US&results=${count}`
       const request = new XMLHttpRequest()
@@ -23,7 +23,7 @@
       request.send()
     })
 
-    getFakeMembers(3).then(
+    getFakeMembers(10).then(
     members => console.log(
       members.map(m=>m.name.first).join(',')
     )
