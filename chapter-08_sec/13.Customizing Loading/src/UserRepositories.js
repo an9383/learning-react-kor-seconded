@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Fetch } from "./Fetch";
+import Fetch from "./Fetch";
 import { useIterator } from "./hooks.js";
 
 function RepoMenu({ repositories, onSelect }) {
