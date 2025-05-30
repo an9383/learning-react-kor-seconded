@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useIterator } from "./hooks";
 
-export default function RepoMenu({ repositories, onSelect }) {
+export default function RepoMenu({ repositories, onSelect = f => f }) {
   const [{ name }, previous, next] = useIterator(repositories);
 
   useEffect(() => {
@@ -10,10 +10,31 @@ export default function RepoMenu({ repositories, onSelect }) {
   }, [name]);
 
   return (
-    <div>
+    <div style={{ display: "flex" }}>
       <button onClick={previous}>&lt;</button>
       <p>{name}</p>
       <button onClick={next}>&gt;</button>
     </div>
   );
 }
+
+
+// import React, { useEffect } from "react";
+// import { useIterator } from "./hooks";
+
+// export default function RepoMenu({ repositories, onSelect }) {
+//   const [{ name }, previous, next] = useIterator(repositories);
+
+//   useEffect(() => {
+//     if (!name) return;
+//     onSelect(name);
+//   }, [name]);
+
+//   return (
+//     <div>
+//       <button onClick={previous}>&lt;</button>
+//       <p>{name}</p>
+//       <button onClick={next}>&gt;</button>
+//     </div>
+//   );
+// }

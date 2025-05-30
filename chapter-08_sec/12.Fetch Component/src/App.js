@@ -1,5 +1,5 @@
 import React from "react";
-import Fetch from "./Fetch";
+import Fetch from "./useFetch";
 import { UserRepositories } from "./UserRepositories";
 
 function GitHubUser({ login }) {
