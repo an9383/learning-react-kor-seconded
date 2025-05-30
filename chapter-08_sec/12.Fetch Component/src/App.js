@@ -1,5 +1,5 @@
 import React from "react";
-import Fetch from "./useFetch";
+import Fetch from "./Fetch";
 import { UserRepositories } from "./UserRepositories";
 
 function GitHubUser({ login }) {
@@ -22,7 +22,6 @@ function UserDetails({ data }) {
       </div>
       <UserRepositories
         login={data.login}
-        selectedRepo={data.repos_url}
         onSelect={(repoName) => console.log(`${repoName} selected`)}
       />
     </div>
