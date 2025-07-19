@@ -1,6 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import data from "../data/recipes.json";
-import Menu from "./components/Menu";
+import React from 'react'
+import { render } from 'react-dom'
+import Menu from './components/Menu'
+import data from '../data/recipes'
 
-ReactDOM.render(<Menu recipes={data} />, document.getElementById("root"));
+window.React = React
+
+render(
+    <Menu recipes={data} />,
+    document.getElementById("react-container")
+)
