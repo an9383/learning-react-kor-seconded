@@ -1,8 +1,6 @@
 import React from "react";
 import ErrorBoundary from "./ErrorBoundary";
 
-
-
 const loadStatus = () => "success - ready";
 
 function Status() {
@@ -15,6 +13,5 @@ export default function App() {
     <ErrorBoundary>
       <Status />
     </ErrorBoundary>
-
   );
 }

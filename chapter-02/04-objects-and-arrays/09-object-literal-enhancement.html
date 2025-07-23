@@ -22,19 +22,16 @@
       powderYell() {
         let yell = this.sound.toUpperCase()
         console.log(`${yell} ${yell} ${yell}!!!`)
-        //GO FAST GO FAST GO FAST!!!
       },
       speed(mph) {
         this.speed = mph
         console.log('속력(mph):', mph)
-        //속력(mph): 350
       }
     }
 
     skier.powderYell()
     skier.speed(350)
     console.log(JSON.stringify(skier))
-    //{"name":"Julia Mancuso","sound":"go fast","speed":350}
 
 </script>
 </body>

@@ -20,6 +20,7 @@ function useFetch(uri) {
     error
   };
 }
+
 export default function Fetch({
   uri,
   renderSuccess,

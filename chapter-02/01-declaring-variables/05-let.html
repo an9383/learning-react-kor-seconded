@@ -25,12 +25,13 @@
 
     // 문제: 카운터 변수 i 영역이 for 루프 블럭 안으로만 제한되지 않는다
 
-    var div, container = document.getElementById('container')
+    var div,
+        container = document.getElementById('container')
 
     for (var i=0; i<5; i++) {
       div = document.createElement('div')
       div.onclick = function() {
-        alert('이것은 박스 #' + i + '입니다.')  // #5
+        alert('이것은 박스 #' + i + '입니다.')
       }
       container.appendChild(div)
     }
