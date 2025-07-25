@@ -10,3 +10,5 @@ const Star = ({ selected = false }) => (
 export default function StarRating({ totalStars = 5 }) {
   return createArray(totalStars).map((n, i) => <Star key={i} />);
 }
+
+
