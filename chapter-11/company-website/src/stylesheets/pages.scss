@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // Using @use instead of @import
 
 div.page {
   display: flex;
@@ -24,7 +24,6 @@ section.contact {
     font-size: 3em;
     color: slategray;
   }
-
 }
 
 div.home {
@@ -55,11 +54,10 @@ div.home {
       flex-basis: 200px;
     }
   }
-
 }
 
 section.about {
-  >section {
+  > section {
     padding: 2em;
   }
 }

@@ -1,27 +1,24 @@
-@import "globals";
+@use "./globals.scss" as globals; // globals 파일을 가져옵니다. 경로에 맞게 수정하세요.
 
 html, body, div#react-container {
   min-height: 100%;
 }
 
 h1 {
-  @include clear;
+  @include globals.clear; // clear 믹스인 호출 변경
 }
 
 body {
-
-  @include clear;
-  @include fade-bg($light, $light-grey);
+  @include globals.clear; // clear 믹스인 호출 변경
+  @include globals.fade-bg(globals.$light, globals.$light-grey); // fade-bg 믹스인 호출 및 변수 사용 변경
 
   div.app {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-
 }
 
 input {
   outline: none;
 }
-

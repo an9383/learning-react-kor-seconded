@@ -1,3 +1,5 @@
+@use "sass:color"; // Import Sass's color module for color functions
+
 $light: rgba(255, 255, 255, 1);
 $light-grey: rgba(229, 229, 229, 1);
 $red: #900;
@@ -9,7 +11,7 @@ $break-lg: 1600px;
 $break-xl: 2000px;
 
 @mixin shadow {
-  box-shadow: 3px 3px 8px 1px darken($light-grey, 20%);
+  box-shadow: 3px 3px 8px 1px color.adjust($light-grey, $lightness: -20%); // Replaced darken() with color.adjust()
 }
 
 @mixin fade-bg($from, $to) {
@@ -32,10 +34,8 @@ h1 {
 }
 
 body {
-
   @include clear;
   @include fade-bg($light, $light-grey);
-
 }
 
 input {

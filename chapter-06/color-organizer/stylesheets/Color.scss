@@ -1,10 +1,11 @@
-@import "globals";
+@use "sass:color"; // color 모듈을 사용하기 위해 선언합니다.
+@use "./globals.scss" as globals; // globals 파일을 가져옵니다. 경로에 맞게 수정하세요.
 
 section.color {
-  @include shadow;
-  border: 2px solid $light-grey;
-  border-bottom-color: darken($light-grey, 40%);
-  border-right-color: darken($light-grey, 40%);
+  @include globals.shadow; // shadow 믹스인 호출 변경
+  border: 2px solid globals.$light-grey; // globals.$light-grey 사용
+  border-bottom-color: color.adjust(globals.$light-grey, $lightness: -40%); // darken() 대체
+  border-right-color: color.adjust(globals.$light-grey, $lightness: -40%); // darken() 대체
   margin: 1em;
   padding: 0;
   flex-basis: 100%;
@@ -12,24 +13,24 @@ section.color {
   flex-wrap: wrap;
   position: relative;
 
-  @media screen and (min-width: $break-sm) {
+  @media screen and (min-width: globals.$break-sm) { // globals.$break-sm 사용
     flex-basis: calc(50% - 2em - 4px);
   }
 
-  @media screen and (min-width: $break-md) {
+  @media screen and (min-width: globals.$break-md) { // globals.$break-md 사용
     flex-basis: calc(33.33333% - 2em - 4px);
   }
 
-  @media screen and (min-width: $break-lg) {
+  @media screen and (min-width: globals.$break-lg) { // globals.$break-lg 사용
     flex-basis: calc(25% - 2em - 4px);
   }
 
-  @media screen and (min-width: $break-xl) {
+  @media screen and (min-width: globals.$break-xl) { // globals.$break-xl 사용
     flex-basis: calc(16.66666% - 2em - 4px);
   }
 
   h1 {
-    font-family: Verdana, sans-serif;
+    font-family: globals.$font-heading; // globals.$font-heading 사용
     text-align: center;
     padding: .5em;
     flex-basis: calc(100% - 1em);
@@ -41,7 +42,7 @@ section.color {
     right: .5em;
     flex-basis: calc(12% - 1em);
     text-align: right;
-    @include fade-bg($light, $light-grey);
+    @include globals.fade-bg(globals.$light, globals.$light-grey); // fade-bg 믹스인 호출 및 변수 사용 변경
     padding: .75em;
     border-radius: .5px;
   }
@@ -63,7 +64,6 @@ section.color {
     bottom: .5em;
     right: .5em;
     font-family: monospace;
-    color: darken($light-grey, 40%);
+    color: color.adjust(globals.$light-grey, $lightness: -40%); // darken() 대체
   }
-
 }

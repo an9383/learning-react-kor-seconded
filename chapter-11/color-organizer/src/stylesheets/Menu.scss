@@ -1,7 +1,6 @@
-@import "globals";
+@use "./globals.scss" as globals; // globals 파일의 실제 경로에 맞게 수정해주세요.
 
 nav {
-
   display: flex;
   justify-content: space-around;
   background-color: black;
@@ -19,7 +18,7 @@ nav {
     padding: .5em;
 
     &.selected {
-      color: $red;
+      color: globals.$red; // globals 모듈에서 $red 변수를 가져와 사용합니다.
     }
   }
 }

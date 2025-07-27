@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // Using @use instead of @import
 
 div.color-details {
   margin: 0;

@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // globals 파일의 실제 경로에 맞게 수정해주세요.
 
 div.app {
   display: flex;
@@ -16,6 +16,6 @@ div.whoops-404 {
   width: 100%;
   height: 100%;
   z-index: 99;
-  background-color: red;
+  background-color: globals.$red; // globals.$red 변수 사용
   color: white;
 }

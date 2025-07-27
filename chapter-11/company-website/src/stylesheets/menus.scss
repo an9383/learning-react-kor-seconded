@@ -1,7 +1,6 @@
-@import "globals";
+@use "./globals.scss" as globals; // Using @use instead of @import
 
 nav.main-menu {
-
   display: flex;
   flex-direction: column;
   background-color: slategray;
@@ -17,7 +16,6 @@ nav.main-menu {
     padding: 1em;
     font-size: 1.5em;
   }
-
 }
 
 div.about-menu {
@@ -27,7 +25,6 @@ div.about-menu {
   background-color: slategray;
 
   > li {
-
     flex-grow: 1;
 
     > a {
@@ -38,6 +35,5 @@ div.about-menu {
       color: ghostwhite;
       padding: .5em;
     }
-
   }
 }

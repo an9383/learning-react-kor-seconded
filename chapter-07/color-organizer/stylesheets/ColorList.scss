@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // globals 파일을 가져옵니다. 경로에 맞게 수정하세요.
 
 div.color-list {
   flex-grow: 1;

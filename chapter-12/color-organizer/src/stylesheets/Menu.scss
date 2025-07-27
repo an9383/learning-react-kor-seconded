@@ -1,7 +1,6 @@
-@import "globals";
+@use "./globals.scss" as globals; // Using @use instead of @import
 
 nav {
-
   display: flex;
   justify-content: space-around;
   background-color: black;
@@ -19,7 +18,7 @@ nav {
     padding: .5em;
 
     &.selected {
-      color: $red;
+      color: globals.$red; // Using the prefixed $red variable from globals.scss
     }
   }
 }

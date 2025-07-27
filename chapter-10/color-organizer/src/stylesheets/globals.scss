@@ -1,3 +1,5 @@
+@use "sass:color"; // color 모듈을 사용하기 위해 선언합니다.
+
 $light: rgba(255, 255, 255, 1);
 $light-grey: rgba(229, 229, 229, 1);
 $red: #900;
@@ -9,7 +11,7 @@ $break-lg: 1600px;
 $break-xl: 2000px;
 
 @mixin shadow {
-  box-shadow: 3px 3px 8px 1px darken($light-grey, 20%);
+  box-shadow: 3px 3px 8px 1px color.adjust($light-grey, $lightness: -20%); // darken() 함수를 color.adjust()로 대체합니다.
 }
 
 @mixin fade-bg($from, $to) {

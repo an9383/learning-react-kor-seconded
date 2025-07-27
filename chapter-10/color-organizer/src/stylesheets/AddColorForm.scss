@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // globals 파일의 실제 경로에 맞게 수정해주세요.
 
 form.add-color {
   width: 100%;
@@ -25,5 +25,4 @@ form.add-color {
     color: white;
     border: none;
   }
-
 }
