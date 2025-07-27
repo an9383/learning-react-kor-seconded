@@ -1,4 +1,4 @@
-@import "globals";
+@use "./globals.scss" as globals; // Using @use instead of @import
 
 form.add-color {
   width: 100%;
@@ -25,5 +25,4 @@ form.add-color {
     color: white;
     border: none;
   }
-
 }

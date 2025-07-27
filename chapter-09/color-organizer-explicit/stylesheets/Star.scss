@@ -1,4 +1,5 @@
-@import "globals";
+@use "sass:color"; // Import Sass's color module for color functions
+@use "./globals.scss" as globals; // Import your globals file using the modern @use rule
 
 div.star {
   cursor: pointer;
@@ -6,11 +7,10 @@ div.star {
   width: 25px;
   margin: 2px;
   float: left;
-  background-color: darken($light-grey, 40%);
+  background-color: color.adjust(globals.$light-grey, $lightness: -40%); /* Replaced darken() with color.adjust() */
   clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
 
   &.selected {
-    background-color: red;
+    background-color: globals.$red; /* Using the prefixed $red variable from globals.scss */
   }
-
 }
