@@ -1,5 +1,5 @@
 var webpack = require("webpack")
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+//var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 var path = require('path')
 
 process.noDeprecation = true
@@ -56,12 +56,6 @@ module.exports = {
             sourceMap: true,
             warnings: false,
             mangle: false
-        }),
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: /\.optimize\.css$/g,
-            cssProcessor: require('cssnano'),
-            cssProcessorOptions: {discardComments: {removeAll: true}},
-            canPrint: true
         })
     ]
 }

@@ -3,8 +3,7 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import StarRating from './StarRating'
 import TimeAgo from './TimeAgo'
-//import FaTrash from 'react-icons/lib/fa/trash-o'
-import FaTrash from 'react-icons/fa';
+import FaTrash from 'react-icons/lib/fa/trash-o'
 import { rateColor, removeColor } from '../actions'
 
 class Color extends Component {

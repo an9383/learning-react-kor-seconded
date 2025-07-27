@@ -3,9 +3,8 @@ import { Component } from 'react'
 import { withRouter } from 'react-router'
 import StarRating from './StarRating'
 import TimeAgo from './TimeAgo'
-//import FaTrash from 'react-icons/lib/fa/trash-o'
-import FaTrash from 'react-icons/fa'
-import '../../stylesheets/Color.scss'
+import FaTrash from 'react-icons/lib/fa/trash-o'
+
 
 class Color extends Component {
 

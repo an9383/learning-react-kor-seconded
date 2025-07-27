@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "build": "webpack --progress",
     "prestart": "npm run build",
-    "start": "opener http://localhost:3000 & httpster -p 3000 -d ./dist",
+    "start": "httpster -d ./dist/ -p 3000",
     "watch:test": "jest --watch",
     "test": "jest",
     "posttest": "npm run lint",
@@ -56,7 +56,7 @@
     "prop-types": "^15.6.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-icons": "2.2.7",
+    "react-icons": "3.10.0",
     "react-redux": "5.0.6",
     "redux": "3.7.2",
     "uuid": "3.1.0"

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 import StarRating from './StarRating'
 import TimeAgo from './TimeAgo'
-//import FaTrash from 'react-icons/lib/fa/trash-o'
-import FaTrash from 'react-icons/fa';
+import FaTrash from 'react-icons/lib/fa/trash-o'
 import '../../stylesheets/Color.scss'
 
 class Color extends Component {

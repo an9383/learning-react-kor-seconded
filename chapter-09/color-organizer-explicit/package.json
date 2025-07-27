@@ -19,13 +19,13 @@
   "author": "Alex Banks <alex@moonhighway.com> (http://www.moonhighway.com)",
   "license": "MIT",
   "devDependencies": {
+    "opener": "1.4.3",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.0",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
     "css-loader": "0.28.7",
-    "opener": "1.4.3",
     "sass": "^1.89.2",
     "sass-loader": "^7.3.1",
     "postcss-loader": "2.0.6",
@@ -38,7 +38,7 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "redux": "3.7.2",
-    "react-icons": "3.10.0",
+    "react-icons": "2.2.7",
     "uuid": "3.1.0"
   }
 }
